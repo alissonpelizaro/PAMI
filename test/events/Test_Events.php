@@ -102,7 +102,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'ConfbridgeList',
             'ConfbridgeListComplete',
             'BridgeInfoChannel',
-            'BridgeInfoComplete',
+            'BridgeInfoComplete'
         );
         $eventTranslatedValues = array(
             'QueueMemberStatus' => array(
@@ -145,8 +145,8 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'FullyBooted' => array(),
             'DongleUSSDStatus' => array(
                 'Privilege' => 'Privilege',
-        		'Id' => 'Id',
-        		'Device' => 'Device',
+        	'Id' => 'Id',
+        	'Device' => 'Device',
                 'Status' => 'Status'
              ),
         	'DongleNewUSSDBase64' => array(
@@ -228,13 +228,13 @@ class Test_Events extends \PHPUnit_Framework_TestCase
         	'DongleShowDevicesComplete' => array('ListItems' => 'items'),
             'DongleSMSStatus' => array(
                 'Privilege' => 'Privilege',
-        		'Id' => 'Id',
-        		'Device' => 'Device',
+        	'Id' => 'Id',
+        	'Device' => 'Device',
                 'Status' => 'Status'
             ),
             'DongleStatus' => array(
                 'Privilege' => 'Privilege',
-        		'Device' => 'Device',
+        	'Device' => 'Device',
                 'Status' => 'Status'
             ),
             'AgentConnect' => array(
@@ -252,13 +252,13 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Logintime' => 'Logintime',
                 'UniqueID' => 'UniqueID',
                 'Agent' => 'Agent',
-                'Privilege' => 'Privilege',
+                'Privilege' => 'Privilege'
             ),
             'Agentlogin' => array(
                 'UniqueID' => 'UniqueID',
                 'Agent' => 'Agent',
                 'Privilege' => 'Privilege',
-                'Channel' => 'Channel',
+                'Channel' => 'Channel'
             ),
             'AgentsComplete' => array(),
             'Agents' => array(
@@ -274,12 +274,12 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Privilege' => 'Privilege',
                 'Channel' => 'Channel',
                 'ChannelType' => 'ChannelType',
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'SIPfullcontact' => 'SIPfullcontact',
                 'SIPcallid' => 'SIPcallid'
             ),
             'CoreShowChannel' => array(
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'Privilege' => 'Privilege',
                 'Channel' => 'Channel',
                 'AccountCode' => 'AccountCode',
@@ -293,7 +293,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Application' => 'Application',
                 'BridgedUniqueID' => 'BridgedUniqueID',
                 'BridgedChannel' => 'BridgedChannel',
-                'Duration' => 'Duration',
+                'Duration' => 'Duration'
             ),
             'DAHDIShowChannels' => array(
                 'Channel' => 'Channel',
@@ -307,50 +307,50 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Privilege' => 'Privilege',
                 'Destination' => 'Destination',
                 'SubEvent' => 'SubEvent',
-        		'CallerIdName' => 'CallerIdName',
+		'CallerIdName' => 'CallerIdName',
                 'CallerIdNum' => 'CallerIdNum',
                 'Channel' => 'Channel',
-        		'DialStatus' => 'DialStatus',
+        	'DialStatus' => 'DialStatus',
                 'DialString' => 'DialString',
-        		'UniqueID' => 'UniqueID',
-        		'DestUniqueID' => 'DestUniqueID',
+        	'UniqueID' => 'UniqueID',
+        	'DestUniqueID' => 'DestUniqueID'
             ),
             'ExtensionStatus' => array(
                 'Privilege' => 'Privilege',
                 'Status' => 'Status',
                 'Exten' => 'Extension',
                 'Hint' => 'Hint',
-        		'Context' => 'Context',
+        	'Context' => 'Context'
             ),
             'Hangup' => array(
                 'CallerIdName' => 'CallerIdName',
                 'CallerIdNum' => 'CallerIdNum',
                 'Channel' => 'Channel',
                 'Privilege' => 'Privilege',
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'Cause' => 'Cause',
                 'cause-txt' => 'cause-txt'
             ),
             'Hold' => array(
                 'Privilege' => 'Privilege',
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'Status' => 'Status',
-                'Channel' => 'Channel',
+                'Channel' => 'Channel'
             ),
         	'Join' => array(
                 'CallerIdName' => 'CallerIdName',
                 'CallerIdNum' => 'CallerIdNum',
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'Position' => 'Position',
                 'Queue' => 'Queue',
                 'Channel' => 'Channel',
                 'Privilege' => 'Privilege',
-                'Count' => 'Count',
+                'Count' => 'Count'
             ),
             'Leave' => array(
                 'Channel' => 'Channel',
                 'Privilege' => 'Privilege',
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'Count' => 'Count',
                 'Queue' => 'Queue'
             ),
@@ -368,28 +368,28 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Original' => 'Original',
                 'CloneState' => 'CloneState',
                 'Clone' => 'Clone',
-                'Privilege' => 'Privilege',
+                'Privilege' => 'Privilege'
             ),
             'MessageWaiting' => array(
-        		'Privilege' => 'Privilege',
-        		'Waiting' => 'Waiting',
-        		'Mailbox' => 'Mailbox',
+        	'Privilege' => 'Privilege',
+        	'Waiting' => 'Waiting',
+        	'Mailbox' => 'Mailbox'
             ),
             'MusicOnHold' => array(
                 'Channel' => 'Channel',
                 'Privilege' => 'Privilege',
-        		'UniqueID' => 'UniqueID',
-        		'State' => 'State',
+        	'UniqueID' => 'UniqueID',
+        	'State' => 'State'
             ),
             'NewAccountCode' => array(
                 'Channel' => 'Channel',
                 'Privilege' => 'Privilege',
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'AccountCode' => 'AccountCode',
-                'OldAccountCode' => 'OldAccountCode',
+                'OldAccountCode' => 'OldAccountCode'
             ),
             'NewCallerid' => array(
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'CallerIdName' => 'CallerIdName',
                 'CallerIdNum' => 'CallerIdNum',
                 'Channel' => 'Channel',
@@ -397,7 +397,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'CID-CallingPres' => 'CID-CallingPres'
             ),
             'Newchannel' => array(
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'CallerIdName' => 'CallerIdName',
                 'CallerIdNum' => 'CallerIdNum',
                 'ChannelStateDesc' => 'ChannelStateDesc',
@@ -417,7 +417,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Extension' => 'Extension',
                 'Exten' => 'Exten',
                 'Context' => 'Context',
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID'
             ),
         	'Newstate' => array(
                 'CallerIdName' => 'CallerIdName',
@@ -510,7 +510,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             ),
         	'QueueParams' => array(
                 'Completed' => '4',
-        		'HoldTime' => '5',
+        	'HoldTime' => '5',
                 'Calls' => '6',
                 'Strategy' => 'Strategy',
                 'Max' => '6',
@@ -619,7 +619,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Extension' => 'Extension',
                 'Context' => 'Context',
                 'UniqueID' => 'UniqueID',
-        		'Privilege' => 'Privilege',
+        	'Privilege' => 'Privilege',
                 'Channel' => 'Channel'
             ),
             'Transfer' => array(
@@ -667,12 +667,16 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Key' => 'Key',
                 'Val' => 'Val'
             ),
-        	'ParkedCallsComplete' => array(),
-        	'StatusComplete' => array('Items' => 'Items'),
-            'RegistrationsComplete' => array('ListItems' => 'ListItems'),
+            'ParkedCallsComplete' => array(),
+            'StatusComplete' => array(
+		 'Items' => 'Items'
+	    ),
+            'RegistrationsComplete' => array(
+		 'ListItems' => 'ListItems'
+	    ),
             'DTMF' => array(
             	'Privilege' => 'Privilege',
-        		'UniqueID' => 'UniqueID',
+        	'UniqueID' => 'UniqueID',
                 'Channel' => 'Channel',
                 'Direction' => 'Direction',
                 'End' => 'End',
@@ -693,59 +697,59 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Channel' => 'Channel',
                 'Variable' => 'Variable',
                 'Value' => 'Value',
-        	    'UniqueID' => 'UniqueID'
+        	'UniqueID' => 'UniqueID'
         	),
-        	'Unlink' => array(
-        		'Privilege' => 'Privilege',
-        	    'CallerID1' => 'CallerID1',
-        	    'CallerID2' => 'CallerID2',
-        	    'UniqueID1' => 'UniqueID1',
-        		'UniqueID2' => 'UniqueID2',
-        	    'Channel1' => 'Channel1',
-        		'Channel2' => 'Channel2',
+           'Unlink' => array(
+        	'Privilege' => 'Privilege',
+        	'CallerID1' => 'CallerID1',
+        	'CallerID2' => 'CallerID2',
+        	'UniqueID1' => 'UniqueID1',
+        	'UniqueID2' => 'UniqueID2',
+        	'Channel1' => 'Channel1',
+        	'Channel2' => 'Channel2'
         	),
-        	'Bridge' => array(
-        		'Privilege' => 'Privilege',
-        	    'CallerID1' => 'CallerID1',
-        	    'CallerID2' => 'CallerID2',
-        	    'UniqueID1' => 'UniqueID1',
-        		'UniqueID2' => 'UniqueID2',
-        	    'Channel1' => 'Channel1',
-        		'Channel2' => 'Channel2',
-        	    'BridgeState' => 'BridgeStart',
-        	    'BridgeType' => 'BridgeType'
+           'Bridge' => array(
+        	'Privilege' => 'Privilege',
+		'CallerID1' => 'CallerID1',
+        	'CallerID2' => 'CallerID2',
+        	'UniqueID1' => 'UniqueID1',
+        	'UniqueID2' => 'UniqueID2',
+        	'Channel1' => 'Channel1',
+        	'Channel2' => 'Channel2',
+        	'BridgeState' => 'BridgeStart',
+        	'BridgeType' => 'BridgeType'
         	),
-        	'vgsm_sms_rx' => array(
-        		'Privilege' => 'Privilege',
-        		'X-SMS-Status-Report-Indication' => 'X-SMS-Status-Report-Indication',
-        	    'X-SMS-User-Data-Header-Indicator' => 'X-SMS-User-Data-Header-Indicator',
-        	    'X-SMS-Reply-Path' => 'X-SMS-Reply-Path',
-        	    'X-SMS-More-Messages-To-Send' => 'X-SMS-More-Messages-To-Send',
-        	    'X-SMS-SMCC-Number' => 'X-SMS-SMCC-Number',
-        	    'X-SMS-SMCC-TON' => 'X-SMS-SMCC-TON',
-        	    'X-SMS-SMCC-NP' => 'X-SMS-SMCC-NP',
-        	    'X-SMS-Sender-Number' => 'X-SMS-Sender-Number',
-        	    'X-SMS-Sender-TON' => 'X-SMS-Sender-TON',
-        	    'X-SMS-Sender-NP' => 'X-SMS-Sender-NP',
-        	    'X-SMS-Message-Type' => 'X-SMS-Message-Type',
-        	    'Content' => 'Content',
-        	    'Date' => 'Date',
-        	    'Content-Transfer-Encoding' => 'ContentEncoding',
-        		'Content-Type' => 'ContentType',
-        	    'MIME-Version' => 'MIME-Version',
-        	    'Subject' => 'Subject',
-        	    'From' => 'From',
-        	    'Received' => 'Received'
+           'vgsm_sms_rx' => array(
+        	'Privilege' => 'Privilege',
+        	'X-SMS-Status-Report-Indication' => 'X-SMS-Status-Report-Indication',
+        	'X-SMS-User-Data-Header-Indicator' => 'X-SMS-User-Data-Header-Indicator',
+        	'X-SMS-Reply-Path' => 'X-SMS-Reply-Path',
+        	'X-SMS-More-Messages-To-Send' => 'X-SMS-More-Messages-To-Send',
+        	'X-SMS-SMCC-Number' => 'X-SMS-SMCC-Number',
+        	'X-SMS-SMCC-TON' => 'X-SMS-SMCC-TON',
+        	'X-SMS-SMCC-NP' => 'X-SMS-SMCC-NP',
+        	'X-SMS-Sender-Number' => 'X-SMS-Sender-Number',
+        	'X-SMS-Sender-TON' => 'X-SMS-Sender-TON',
+        	'X-SMS-Sender-NP' => 'X-SMS-Sender-NP',
+        	'X-SMS-Message-Type' => 'X-SMS-Message-Type',
+        	'Content' => 'Content',
+        	'Date' => 'Date',
+        	'Content-Transfer-Encoding' => 'ContentEncoding',
+        	'Content-Type' => 'ContentType',
+        	'MIME-Version' => 'MIME-Version',
+        	'Subject' => 'Subject',
+        	'From' => 'From',
+        	'Received' => 'Received'
         	),
-        	'vgsm_net_state' => array(
-        		'Privilege' => 'Privilege',
-        		'X-vGSM-GSM-Registration' => 'X-vGSM-GSM-Registration',
+           'vgsm_net_state' => array(
+        	'Privilege' => 'Privilege',
+        	'X-vGSM-GSM-Registration' => 'X-vGSM-GSM-Registration'
         	),
-        	'vgsm_me_state' => array(
-        		'Privilege' => 'Privilege',
-        	    'X-vGSM-ME-State-Change-Reason' => 'X-vGSM-ME-State-Change-Reason',
-        	    'X-vGSM-ME-Old-State' => 'X-vGSM-ME-Old-State',
-        	    'X-vGSM-ME-State' => 'X-vGSM-ME-State',
+           'vgsm_me_state' => array(
+        	'Privilege' => 'Privilege',
+        	'X-vGSM-ME-State-Change-Reason' => 'X-vGSM-ME-State-Change-Reason',
+        	'X-vGSM-ME-Old-State' => 'X-vGSM-ME-Old-State',
+        	'X-vGSM-ME-State' => 'X-vGSM-ME-State'
             ),
             'CEL' => array(
                 'AMAFlags' => 'AMAFlags',
@@ -770,7 +774,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Privilege' => 'Privilege',
                 'Timestamp' => 'Timestamp',
                 'UniqueID' => 'UniqueID',
-                'Userfield' => 'Userfield',
+                'Userfield' => 'Userfield'
             ),
             'ParkedCall' => array(
                 'Privilege' => 'Privilege',
@@ -799,7 +803,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'ParkerDialString' => 'ParkerDialString',
                 'ParkingSpace' => 'ParkingSpace',
                 'ParkingTimeout' => 'ParkingTimeout',
-                'ParkingDuration' => 'ParkingDuration',
+                'ParkingDuration' => 'ParkingDuration'
             ),
             'UnParkedCall' => array(
                 'Privilege' => 'Privilege',
@@ -851,7 +855,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'RetrieverContext' => 'RetrieverContext',
                 'RetrieverExten' => 'RetrieverExten',
                 'RetrieverPriority' => 'RetrieverPriority',
-                'RetrieverUniqueid' => 'RetrieverUniqueid',
+                'RetrieverUniqueid' => 'RetrieverUniqueid'
             ),
             'Link' => array(
                 'Privilege' => 'Privilege',
@@ -876,7 +880,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
                 'Command' => 'Command',
-                'CommandId' => 'CommandId',
+                'CommandId' => 'CommandId'
             ),
             'AGIExecEnd' => array(
                 'Channel' => 'Channel',
@@ -894,7 +898,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Command' => 'Command',
                 'CommandId' => 'CommandId',
                 'ResultCode' => 'ResultCode',
-                'Result' => 'Result',
+                'Result' => 'Result'
             ),
             'AsyncAGIStart' => array(
                 'Channel' => 'Channel',
@@ -909,7 +913,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Exten' => 'Exten',
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
-                'Env' => 'Env',
+                'Env' => 'Env'
             ),
             'AsyncAGIExec' => array(
                 'Channel' => 'Channel',
@@ -925,7 +929,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
                 'CommandID' => 'CommandID',
-                'Result' => 'Result',
+                'Result' => 'Result'
             ),
             'AsyncAGIEnd' => array(
                 'Channel' => 'Channel',
@@ -939,7 +943,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Context' => 'Context',
                 'Exten' => 'Exten',
                 'Priority' => 'Priority',
-                'Uniqueid' => 'Uniqueid',
+                'Uniqueid' => 'Uniqueid'
             ),
             'QueueCallerJoin' => array(
                 'Channel' => 'Channel',
@@ -956,7 +960,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Uniqueid' => 'Uniqueid',
                 'Queue' => 'Queue',
                 'Position' => 'Position',
-                'Count' => 'Count',
+                'Count' => 'Count'
             ),
             'QueueCallerLeave' => array(
                 'Channel' => 'Channel',
@@ -973,7 +977,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Uniqueid' => 'Uniqueid',
                 'Queue' => 'Queue',
                 'Count' => 'Count',
-                'Position' => 'Position',
+                'Position' => 'Position'
             ),
             'AttendedTransfer' => array(
                 'Result' => 'Result',
@@ -1052,7 +1056,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'TransfereeContext' => 'TransfereeContext',
                 'TransfereeExten' => 'TransfereeExten',
                 'TransfereePriority' => 'TransfereePriority',
-                'TransfereeUniqueid' => 'TransfereeUniqueid',
+                'TransfereeUniqueid' => 'TransfereeUniqueid'
             ),
             'BlindTransfer' => array(
                 'Result' => 'Result',
@@ -1088,7 +1092,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'BridgeNumChannels' => 'BridgeNumChannels',
                 'IsExternal' => 'IsExternal',
                 'Context' => 'Context',
-                'Extension' => 'Extension',
+                'Extension' => 'Extension'
             ),
             'DialBegin' => array(
                 'Channel' => 'Channel',
@@ -1115,7 +1119,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'DestExten' => 'DestExten',
                 'DestPriority' => 'DestPriority',
                 'DestUniqueid' => 'DestUniqueid',
-                'DialString' => 'DialString',
+                'DialString' => 'DialString'
             ),
             'DialEnd' => array(
                 'Channel' => 'Channel',
@@ -1142,7 +1146,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'DestExten' => 'DestExten',
                 'DestPriority' => 'DestPriority',
                 'DestUniqueid' => 'DestUniqueid',
-                'DialStatus' => 'DialStatus',
+                'DialStatus' => 'DialStatus'
             ),
             'DTMFBegin' => array(
                 'Channel' => 'Channel',
@@ -1158,7 +1162,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
                 'Digit' => 'Digit',
-                'Direction' => 'Direction',
+                'Direction' => 'Direction'
             ),
             'DTMFEnd' => array(
                 'Channel' => 'Channel',
@@ -1175,7 +1179,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Uniqueid' => 'Uniqueid',
                 'Digit' => 'Digit',
                 'DurationMs' => 'DurationMs',
-                'Direction' => 'Direction',
+                'Direction' => 'Direction'
             ),
             'BridgeCreate' => array(
                 'BridgeUniqueid' => 'BridgeUniqueid',
@@ -1183,7 +1187,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'BridgeTechnology' => 'BridgeTechnology',
                 'BridgeCreator' => 'BridgeCreator',
                 'BridgeName' => 'BridgeName',
-                'BridgeNumChannels' => 'BridgeNumChannels',
+                'BridgeNumChannels' => 'BridgeNumChannels'
             ),
             'BridgeDestroy' => array(
                 'BridgeUniqueid' => 'BridgeUniqueid',
@@ -1191,7 +1195,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'BridgeTechnology' => 'BridgeTechnology',
                 'BridgeCreator' => 'BridgeCreator',
                 'BridgeName' => 'BridgeName',
-                'BridgeNumChannels' => 'BridgeNumChannels',
+                'BridgeNumChannels' => 'BridgeNumChannels'
             ),
             'BridgeEnter' => array(
                 'BridgeUniqueid' => 'BridgeUniqueid',
@@ -1212,7 +1216,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Exten' => 'Exten',
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
-                'SwapUniqueid' => 'SwapUniqueid',
+                'SwapUniqueid' => 'SwapUniqueid'
             ),
             'BridgeLeave' => array(
                 'BridgeUniqueid' => 'BridgeUniqueid',
@@ -1232,7 +1236,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Context' => 'Context',
                 'Exten' => 'Exten',
                 'Priority' => 'Priority',
-                'Uniqueid' => 'Uniqueid',
+                'Uniqueid' => 'Uniqueid'
             ),
             'MusicOnHoldStart' => array(
                 'Channel' => 'Channel',
@@ -1247,7 +1251,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Exten' => 'Exten',
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
-                'Class' => 'Class',
+                'Class' => 'Class'
             ),
             'MusicOnHoldStop' => array(
                 'Channel' => 'Channel',
@@ -1261,7 +1265,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Context' => 'Context',
                 'Exten' => 'Exten',
                 'Priority' => 'Priority',
-                'Uniqueid' => 'Uniqueid',
+                'Uniqueid' => 'Uniqueid'
             ),
             'ConfbridgeStart' => array(
                 'Conference' => 'Conference',
@@ -1270,7 +1274,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'BridgeTechnology' => 'BridgeTechnology',
                 'BridgeCreator' => 'BridgeCreator',
                 'BridgeName' => 'BridgeName',
-                'BridgeNumChannels' => 'BridgeNumChannels',
+                'BridgeNumChannels' => 'BridgeNumChannels'
             ),
             'ConfbridgeEnd' => array(
                 'Conference' => 'Conference',
@@ -1279,7 +1283,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'BridgeTechnology' => 'BridgeTechnology',
                 'BridgeCreator' => 'BridgeCreator',
                 'BridgeName' => 'BridgeName',
-                'BridgeNumChannels' => 'BridgeNumChannels',
+                'BridgeNumChannels' => 'BridgeNumChannels'
             ),
             'ConfbridgeJoin' => array(
                 'Conference' => 'Conference',
@@ -1302,7 +1306,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
                 'Linkedid' => 'Linkedid',
-                'Admin' => 'Admin',
+                'Admin' => 'Admin'
             ),
             'ConfbridgeLeave' => array(
                 'Conference' => 'Conference',
@@ -1325,7 +1329,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
                 'Linkedid' => 'Linkedid',
-                'Admin' => 'Admin',
+                'Admin' => 'Admin'
             ),
             'ConfbridgeMute' => array(
                 'Conference' => 'Conference',
@@ -1348,7 +1352,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
                 'Linkedid' => 'Linkedid',
-                'Admin' => 'Admin',
+                'Admin' => 'Admin'
             ),
             'ConfbridgeUnmute' => array(
                 'Conference' => 'Conference',
@@ -1371,7 +1375,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
                 'Linkedid' => 'Linkedid',
-                'Admin' => 'Admin',
+                'Admin' => 'Admin'
             ),
             'ConfbridgeTalking' => array(
                 'Conference' => 'Conference',
@@ -1395,7 +1399,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Uniqueid' => 'Uniqueid',
                 'Linkedid' => 'Linkedid',
                 'TalkingStatus' => 'TalkingStatus',
-                'Admin' => 'Admin',
+                'Admin' => 'Admin'
             ),
             'ConfbridgeList' => array(
                 'Conference' => 'Conference',
@@ -1408,7 +1412,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Waiting' => 'Waiting',
                 'Muted' => 'Muted',
                 'AnsweredTime' => 'AnsweredTime',
-                'Admin' => 'Admin',
+                'Admin' => 'Admin'
             ),
             'ConfbridgeListComplete' => array('ListItems' => 'ListItems'),
             'BridgeInfoChannel' => array(
@@ -1424,7 +1428,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'Exten' => 'Exten',
                 'Priority' => 'Priority',
                 'Uniqueid' => 'Uniqueid',
-                'Linkedid' => 'Linkedid',
+                'Linkedid' => 'Linkedid'
             ),
             'BridgeInfoComplete' => array(
                 'BridgeUniqueid' => 'BridgeUniqueid',
@@ -1434,7 +1438,7 @@ class Test_Events extends \PHPUnit_Framework_TestCase
                 'BridgeName' => 'BridgeName',
                 'BridgeNumChannels' => 'BridgeNumChannels',
                 'BridgeVideoSourceMode' => 'BridgeVideoSourceMode',
-                'BridgeVideoSource' => 'BridgeVideoSource',
+                'BridgeVideoSource' => 'BridgeVideoSource'
             ),
         );
         $eventGetters = array(
@@ -1447,20 +1451,22 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'Agents' => array(
                 'LoggedInChan' => 'Channel'
             ),
-        	'ExtensionStatus' => array(
+            'ExtensionStatus' => array(
                 'Exten' => 'Extension'
             ),
             'Hangup' => array(
                 'cause-txt' => 'CauseText'
-             ),
-        	'ListDialplan' => array(
+            ),
+            'ListDialplan' => array(
                 'AppData' => 'ApplicationData',
             ),
             'NewCallerid' => array(
                 'CID-CallingPres' => 'CallerIdPres'
             ),
-            'Newchannel' => array('Exten' => 'Extension'),
-        	'Newexten' => array(
+            'Newchannel' => array(
+		'Exten' => 'Extension'
+	    ),
+            'Newexten' => array(
                 'AppData' => 'ApplicationData',
             ),
             'QueueMemberStatus' => array(
@@ -1469,44 +1475,60 @@ class Test_Events extends \PHPUnit_Framework_TestCase
             'QueueMember' => array(
                 'Name' => 'MemberName'
             ),
-        	'AGIExec' => array(),
+            'AGIExec' => array(),
             'Transfer' => array(
                 'SIP-Callid' => 'SipCallID',
             ),
             'VoicemailUserEntry' => array(
                 'VmContext' => 'VoicemailContext',
             ),
-            'PeerEntry' => array('ChanObjectType' => 'ChannelObjectType'),
-            'VarSet' => array('Variable' => 'VariableName'),
-        	'StatusComplete' => array('Items' => 'ListItems'),
-            'DBGetResponse' => array('Key' => 'KeyName', 'Val' => 'Value'),
-        	'vgsm_sms_rx' => array(
-        	    'X-SMS-Status-Report-Indication' => 'StatusReportIndication',
-        	    'X-SMS-User-Data-Header-Indicator' => 'DataHeaderIndicator',
-        	    'X-SMS-Reply-Path' => 'ReplyPath',
-        	    'X-SMS-More-Messages-To-Send' => 'MoreMessagesToSend',
+            'PeerEntry' => array(
+		'ChanObjectType' => 'ChannelObjectType'
+	    ),
+            'VarSet' => array(
+		'Variable' => 'VariableName'
+	    ),
+            'StatusComplete' => array(
+		'Items' => 'ListItems'
+	    ),
+            'DBGetResponse' => array(
+		'Key' => 'KeyName', 
+		'Val' => 'Value'
+	    ),
+            'vgsm_sms_rx' => array(
+        	'X-SMS-Status-Report-Indication' => 'StatusReportIndication',
+        	'X-SMS-User-Data-Header-Indicator' => 'DataHeaderIndicator',
+        	'X-SMS-Reply-Path' => 'ReplyPath',
+        	'X-SMS-More-Messages-To-Send' => 'MoreMessagesToSend',
                 'X-SMS-SMCC-Number' => 'SMCCNumber',
-        	    'X-SMS-SMCC-TON' => 'SMCCTON',
-        	    'X-SMS-SMCC-NP' => 'SMCCNP',
-        	    'X-SMS-Sender-Number' => 'SenderNumber',
-        	    'X-SMS-Sender-TON' => 'SenderTON',
-        	    'X-SMS-Sender-NP' => 'SenderNP',
-        	    'X-SMS-Message-Type' => 'MessageType',
+        	'X-SMS-SMCC-TON' => 'SMCCTON',
+        	'X-SMS-SMCC-NP' => 'SMCCNP',
+        	'X-SMS-Sender-Number' => 'SenderNumber',
+        	'X-SMS-Sender-TON' => 'SenderTON',
+        	'X-SMS-Sender-NP' => 'SenderNP',
+        	'X-SMS-Message-Type' => 'MessageType',
                 'Content-Transfer-Encoding' => 'ContentEncoding',
                 'Content-Type' => 'ContentType',
                 'MIME-Version' => 'MIMEVersion'
         	),
-        	'DAHDIShowChannelsComplete' => array('items' => 'ListItems'),
-        	'vgsm_net_state' => array('X-vGSM-GSM-Registration' => 'State'),
-        	'vgsm_me_state' => array(
-        		'X-vGSM-ME-State-Change-Reason' => 'Reason',
-        	    'X-vGSM-ME-Old-State' => 'OldState',
-        	    'X-vGSM-ME-State' => 'State',
+            'DAHDIShowChannelsComplete' => array(
+		'items' => 'ListItems'
+	    ),
+            'vgsm_net_state' => array(
+		'X-vGSM-GSM-Registration' => 'State'
+	    ),
+            'vgsm_me_state' => array(
+        	'X-vGSM-ME-State-Change-Reason' => 'Reason',
+        	'X-vGSM-ME-Old-State' => 'OldState',
+        	'X-vGSM-ME-State' => 'State',
         	),
-            'ParkedCall' => array('Exten' => 'Extension'),
-            'UnParkedCall' => array('Exten' => 'Extension'),
+            'ParkedCall' => array(
+		'Exten' => 'Extension'
+	    ),
+            'UnParkedCall' => array(
+		'Exten' => 'Extension'
+	    ),
             'AGIExecStart' => array(
-
             ),
         );
         foreach ($eventNames as $eventName) {
@@ -1525,32 +1547,32 @@ class Test_Events extends \PHPUnit_Framework_TestCase
         $mock_stream_socket_client = true;
         $mock_stream_set_blocking = true;
         $options = array(
-        	'host' => '2.3.4.5',
+            'host' => '2.3.4.5',
             'scheme' => 'tcp://',
-        	'port' => 9999,
-        	'username' => 'asd',
-        	'secret' => 'asd',
+            'port' => 9999,
+            'username' => 'asd',
+            'secret' => 'asd',
             'connect_timeout' => 10,
-        	'read_timeout' => 10
+            'read_timeout' => 10
         );
         $write = array(
-        	"action: Login\r\nactionid: 1432.123\r\nusername: asd\r\nsecret: asd\r\n"
+            "action: Login\r\nactionid: 1432.123\r\nusername: asd\r\nsecret: asd\r\n"
         );
         setFgetsMock($standardAMIStart, $write);
         $client = new \PAMI\Client\Impl\ClientImpl($options);
         $client->registerEventListener(new SomeListenerClass);
-	    $client->open();
-	    $message = array();
-	    $message[] = 'Event: ' . $eventName;
-	    foreach ($values as $key => $value) {
-	        $message[] = $key . ': ' . $value;
-	    }
-	    $message[] = '';
-	    setFgetsMock($message, $message);
-	    for($i = 0; $i < count($message); $i++) {
-	        $client->process();
-	    }
-	    $event = SomeListenerClass::$event;
+	$client->open();
+	$message = array();
+	$message[] = 'Event: ' . $eventName;
+	foreach ($values as $key => $value) {
+	    $message[] = $key . ': ' . $value;
+	}
+	$message[] = '';
+	setFgetsMock($message, $message);
+	for($i = 0; $i < count($message); $i++) {
+	    $client->process();
+	}
+	$event = SomeListenerClass::$event;
         foreach ($values as $key => $value) {
             if (isset($getters[$eventName][$key])) {
                 $methodName = 'get' . $getters[$eventName][$key];
