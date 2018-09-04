@@ -50,7 +50,7 @@ namespace {
         'Message: Thanks for all the fish.',
         ''
     );
-    $standardAMIStartBadLogin = array(
+    global $standardAMIStartBadLogin = array(
    		'Asterisk Call Manager/1.1',
    		'Response: Error', // also tests behavior when asterisk does not return an actionid
    		'Message: Authentication accepted',
