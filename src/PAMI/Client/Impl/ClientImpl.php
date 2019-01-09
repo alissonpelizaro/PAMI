@@ -164,7 +164,7 @@ class ClientImpl implements IClient
     {
         $cString = $this->scheme . $this->host . ':' . $this->port;
         $this->context = stream_context_create();
-        $errno = 0;
+        $errno = false;
         $errstr = '';
         $this->socket = @stream_socket_client(
             $cString,
@@ -244,7 +244,7 @@ class ClientImpl implements IClient
         $this->currentProcessingMessage .= $read;
         // If we have a complete message, then return it. Save the rest for
         // later.
-        while (($marker = strpos($this->currentProcessingMessage, Message::EOM))) {
+        while ($marker = strpos($this->currentProcessingMessage, Message::EOM)) {
             $msg = substr($this->currentProcessingMessage, 0, $marker);
             $this->currentProcessingMessage = substr(
                 $this->currentProcessingMessage,
